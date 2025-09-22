@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lifeofasage — Portfolio</title>
+  <meta name="description" content="Personal website and portfolio of Lifeofasage." />
+
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lifeofasage — Portfolio">
+  <meta property="og:description" content="Turning ideas into simple, clean websites while learning the craft of web development.">
+  <meta property="og:url" content="https://your-domain.example/">
+  <meta property="og:image" content="images/opengraph_lifeofasage.jpg">
+  <meta property="og:image:alt" content="Lifeofasage portfolio preview">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lifeofasage — Portfolio">
+  <meta name="twitter:description" content="Turning ideas into simple, clean websites while learning the craft of web development.">
+  <meta name="twitter:image" content="images/opengraph_lifeofasage.jpg">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="images/favicon/favicon_io/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon_io/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon_io/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/favicon_io/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/favicon/favicon_io/android-chrome-512x512.png">
+</head>
+
+<!-- Back to Top -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#">Lifeofasage<span>.</span></a>
+      <!-- Theme toggle -->
+<button class="theme-toggle" id="themeToggle"
+        aria-label="Toggle dark/light theme"
+        aria-pressed="false">🌙</button>
+
+      <!-- Mobile menu button -->
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-controls="site-menu" aria-expanded="false">☰</button>
+
+      <!-- Nav with ID for JS -->
+      <nav class="menu" id="site-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+  <div class="hero-text">
+    <h1>Hi, I’m <span class="accent">Samuel Sage</span></h1>
+    <p>Turning ideas into simple, clean websites while learning the craft of web development.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">See my work</a>
+      <a class="btn" href="#contact">Contact me</a>
+    </div>
+  </div>
+
+  <div class="hero-art">
+    <img src="images/me.jpg"
+         alt="Samuel Sage"
+         class="profile-pic"
+         loading="lazy"
+         width="220"
+         height="220">
+  </div>
+</section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section container about">
+      <div class="about-grid">
+        <div class="about-copy">
+          <h2>About</h2>
+          <p>
+            I’m Samuel Sage, a beginner web developer based in Nigeria. I recently started my
+            journey into tech and I enjoy learning how HTML, CSS, and JavaScript come together to
+            create real websites. My focus right now is building simple, responsive projects as I
+            strengthen my skills. In the future, I hope to grow into a professional front-end developer
+            and create websites that are both useful and beautiful.
+          </p>
+
+          <!-- Cards block -->
+          <div class="directory-cards">
+            <div class="directory-card">
+              <h4>📍 Location</h4>
+              <p>Lagos, Nigeria</p>
+            </div>
+            <div class="directory-card">
+              <h4>🛠 Learning</h4>
+              <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="directory-card">
+              <h4>🎯 Goal</h4>
+              <p>Become a front-end developer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick links panel -->
+        <nav class="directory-links" aria-label="Quick links">
+          <a class="dir-item" href="mailto:samuelsageola@gmail.com">
+            <span class="dir-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <small>samuelsageola@gmail.com</small>
+            </div>
+          </a>
+
+          <a class="dir-item" href="https://github.com/your-username" target="_blank" rel="noopener">
+            <span class="dir-icon">🐙</span>
+            <div>
+              <strong>GitHub</strong>
+              <small>github.com/your-username</small>
+            </div>
+          </a>
+
+          <a class="dir-item" href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">
+            <span class="dir-icon">💼</span>
+            <div>
+              <strong>LinkedIn</strong>
+              <small>Connect with me</small>
+            </div>
+          </a>
+
+          <a class="dir-item" href="assets/Samuel-Sage-Resume.pdf" download>
+            <span class="dir-icon">📄</span>
+            <div>
+              <strong>Resume</strong>
+              <small>Download PDF</small>
+            </div>
+          </a>
+
+          <a class="dir-item" href="https://cal.com/your-handle" target="_blank" rel="noopener">
+            <span class="dir-icon">📅</span>
+            <div>
+              <strong>Book a call</strong>
+              <small>Schedule 15–30 min</small>
+            </div>
+          </a>
+
+          <a class="dir-item" href="#projects">
+            <span class="dir-icon">🧩</span>
+            <div>
+              <strong>Projects</strong>
+              <small>See what I’ve built</small>
+            </div>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container skills">
+      <h2>Skills</h2>
+      <p class="muted">Tools and technologies I’m practicing and using.</p>
+
+      <div class="stack">
+        <span class="chip">HTML5</span>
+        <span class="chip">CSS3</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Responsive Design</span>
+        <span class="chip">Git & GitHub</span>
+        <span class="chip">VS Code</span>
+      </div>
+
+      <div class="skill-grid" role="list">
+        <article class="skill" role="listitem">
+          <div class="skill-head">
+            <span>HTML</span>
+            <span class="level">Beginner → Intermediate</span>
+          </div>
+          <div class="bar" aria-label="HTML skill level">
+            <span style="--level: .75"></span>
+          </div>
+        </article>
+
+        <article class="skill" role="listitem">
+          <div class="skill-head">
+            <span>CSS</span>
+            <span class="level">Beginner → Intermediate</span>
+          </div>
+          <div class="bar" aria-label="CSS skill level">
+            <span style="--level: .65"></span>
+          </div>
+        </article>
+
+        <article class="skill" role="listitem">
+          <div class="skill-head">
+            <span>JavaScript</span>
+            <span class="level">Beginner</span>
+          </div>
+          <div class="bar" aria-label="JavaScript skill level">
+            <span style="--level: .40"></span>
+          </div>
+        </article>
+
+        <article class="skill" role="listitem">
+          <div class="skill-head">
+            <span>Git / GitHub</span>
+            <span class="level">Beginner</span>
+          </div>
+          <div class="bar" aria-label="Git skill level">
+            <span style="--level: .45"></span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+<section id="projects" class="section container">
+  <h2>Projects</h2>
+  <div class="grid">
+    <!-- Project 1 -->
+    <article class="card">
+      <a href="https://your-login-demo.example" target="_blank" rel="noopener">
+        <img class="card-thumb"
+             src="images/login-thumb.jpg"
+             alt="Netflix-style login page thumbnail"
+             loading="lazy"
+             width="400"
+             height="250">
+      </a>
+      <h3>Netflix-Style Login Page</h3>
+
+      <!-- 🏷️ Badges -->
+      <ul class="badges" aria-label="Technologies used">
+        <li class="badge">HTML5</li>
+        <li class="badge">CSS3</li>
+        <li class="badge">Responsive</li>
+      </ul>
+
+      <p>A simple responsive login page built with HTML and CSS. I practiced layouts, background images, and styled forms.</p>
+      <div class="links">
+        <a href="https://your-login-demo.example" target="_blank" rel="noopener" aria-label="Open live demo in a new tab">Live demo</a>
+        <a href="https://github.com/your-username/netflix-login" target="_blank" rel="noopener" aria-label="View source code on GitHub">Source code</a>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="card">
+      <a href="https://your-portfolio.example" target="_blank" rel="noopener">
+        <img class="card-thumb"
+             src="images/portfolio-thumb.jpg"
+             alt="Portfolio website thumbnail"
+             loading="lazy"
+             width="400"
+             height="250">
+      </a>
+      <h3>Personal Portfolio Website</h3>
+
+      <!-- 🏷️ Badges -->
+      <ul class="badges" aria-label="Technologies used">
+        <li class="badge">HTML</li>
+        <li class="badge">CSS</li>
+        <li class="badge">JavaScript</li>
+        <li class="badge">Accessibility</li>
+      </ul>
+
+      <p>This site—built step by step using HTML, CSS, and lightweight JavaScript.</p>
+      <div class="links">
+        <a href="https://your-portfolio.example" target="_blank" rel="noopener" aria-label="Open live site in a new tab">Live demo</a>
+        <a href="https://github.com/your-username/portfolio" target="_blank" rel="noopener" aria-label="View source code on GitHub">Source code</a>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="card">
+      <a href="#" target="_blank" rel="noopener">
+        <img class="card-thumb"
+             src="images/calc.jpg"
+             alt="Simple calculator project thumbnail"
+             loading="lazy"
+             width="400"
+             height="250">
+      </a>
+      <h3>Simple Calculator (Planned)</h3>
+
+      <!-- 🏷️ Badges -->
+      <ul class="badges" aria-label="Technologies used">
+        <li class="badge">HTML</li>
+        <li class="badge">CSS</li>
+        <li class="badge">JavaScript</li>
+      </ul>
+
+      <p>A tiny JavaScript calculator UI I’ll build to practice functions and DOM events.</p>
+      <div class="links">
+        <a href="#" target="_blank" rel="noopener" aria-label="Open live demo in a new tab">Live demo</a>
+        <a href="#" target="_blank" rel="noopener" aria-label="View source code on GitHub">Source code</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+
+    <!-- CONTACT -->
+<section id="contact" class="section container">
+  <h2>Contact</h2>
+  <p>Want to reach out? Send me an email:</p>
+
+  <!-- Polished Contact Form -->
+  <form id="contactForm" class="contact-form" method="POST" action="https://formsubmit.co/samuelsageola@gmail.com">
+    <!-- Required by FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New message from Lifeofasage portfolio">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://your-domain.example/#contact?sent=1">
+
+    <!-- Name -->
+    <div class="row">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Your name" required>
+      <span class="error" id="nameError" aria-live="polite"></span>
+    </div>
+
+    <!-- Email -->
+    <div class="row">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required>
+      <span class="error" id="emailError" aria-live="polite"></span>
+    </div>
+
+    <!-- Message -->
+    <div class="row">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+      <span class="error" id="messageError" aria-live="polite"></span>
+    </div>
+
+    <!-- Spam protection (human check) -->
+<div class="row">
+  <label for="human">Spam check: <span id="humanQuestion">…</span></label>
+  <input id="human" name="human" type="text" inputmode="numeric" placeholder="Your answer" required>
+  <span class="error" id="humanError" aria-live="polite"></span>
+</div>
+
+    <!-- Honeypot (spam trap) -->
+    <input type="text" name="_honey" style="display:none">
+
+    <!-- Submit -->
+    <button class="btn primary" type="submit">Send message</button>
+    <p class="form-note muted">Powered by FormSubmit • You’ll get a copy by email.</p>
+    <!-- Inline alert box -->
+<div id="formAlert" class="alert" role="status" aria-live="polite" hidden></div>
+
+
+    <!-- Alert box for success/failure -->
+    <div id="formAlert" class="alert" style="display:none;" role="alert"></div>
+  </form>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Samuel Sage. All rights reserved.</p>
+
+    <!-- Social links -->
+    <nav class="social-links" aria-label="Social links">
+      <a href="mailto:samuelsageola@gmail.com" aria-label="Email">
+        <!-- Mail -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.5" />
+          <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        </svg>
+      </a>
+
+      <a href="https://github.com/your-username" target="_blank" rel="noopener" aria-label="GitHub">
+        <!-- GitHub -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.2.8-.5v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.5-1.8-1.5-1.8-1.3-.9.1-.9.1-.9 1.5.1 2.3 1.6 2.3 1.6 1.3 2.3 3.5 1.6 4.4 1.2.1-1 .5-1.6.9-2-2.7-.3-5.6-1.4-5.6-6.2 0-1.4.5-2.5 1.3-3.4-.1-.3-.6-1.7.1-3.5 0 0 1.1-.4 3.6 1.3a12.4 12.4 0 0 1 6.6 0c2.5-1.7 3.6-1.3 3.6-1.3.7 1.8.2 3.2.1 3.5.8.9 1.3 2 1.3 3.4 0 4.8-2.9 5.9-5.6 6.2.5.5 1 1.4 1 2.8v4.1c0 .3.2.6.8.5A12 12 0 0 0 12 .5Z"/>
+        </svg>
+      </a>
+
+      <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <!-- LinkedIn -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5Zm.02 6.5H2v10h3V10ZM9 10H6v10h3v-5.3c0-2.8 3-3 3 0V20h3v-6.2c0-5.2-5.7-5-6-2.5V10Z"/>
+        </svg>
+      </a>
+
+      <a href="https://x.com/your-handle" target="_blank" rel="noopener" aria-label="X (Twitter)">
+        <!-- X -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.6 3H20l-6.5 7.4L21.8 21H15l-5-6-5.7 6H2l7.4-8.2L2.4 3H9l4.5 5.5L17.6 3Z"/>
+        </svg>
+      </a>
+    </nav>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
